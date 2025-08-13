@@ -23,7 +23,7 @@ export function SkillTag({
     >
       <span
         className={cn(
-          "font-geist text-[12px] font-normal leading-normal text-nowrap",
+          "font-geist text-[11px] md:text-[12px] font-normal leading-normal text-nowrap",
           textColor,
         )}
       >

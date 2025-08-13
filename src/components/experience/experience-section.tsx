@@ -93,19 +93,22 @@ export function ExperienceSection({ className }: { className?: string }) {
     <section
       id="experience"
       className={cn(
-        "relative bg-portfolio-bg py-20 px-[250px] flex flex-col items-center justify-center gap-20 w-full",
+        "relative bg-portfolio-bg py-10 lg:py-20 px-6 lg:px-[250px] flex flex-col items-center justify-center gap-10 md:gap-20 w-full",
         className,
       )}
     >
       <div className="w-full flex flex-col gap-1">
-        <span className="font-medium text-[38px] -tracking-[2px]">
+        <span className="font-medium text-[28px] md:text-[38px] -tracking-[2px]">
           Work Experience
         </span>
-        <span className="font-light text-sm text-white/60">
-          Hover on any one to see details
+        <span className="font-light text-xs md:text-sm text-white/60">
+          <span className="hidden md:inline">
+            Hover on any one to see details
+          </span>
+          <span className="md:hidden">Tap any card to see details</span>
         </span>
       </div>
-      <div className="grid grid-cols-3 items-center justify-items-center gap-x-7 gap-y-10 w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center justify-items-center gap-x-4 gap-y-6 md:gap-y-10 w-full">
         {experiences.map((exp, index) => (
           <ExperienceCard key={index} {...exp} />
         ))}

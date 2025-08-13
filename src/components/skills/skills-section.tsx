@@ -72,29 +72,31 @@ export function SkillsSection() {
   return (
     <section
       id="tech-skills"
-      className="relative bg-portfolio-bg py-20 px-[250px] flex flex-col items-center justify-center gap-10 w-full"
+      className="relative bg-portfolio-bg py-10 lg:py-20 px-6 lg:px-[250px] flex flex-col items-center justify-center gap-8 md:gap-10 w-full"
     >
-      <div className="font-medium text-[38px] -tracking-[2px] w-full">
+      <div className="font-medium text-[28px] md:text-[38px] -tracking-[2px] w-full">
         Languages & Tools
       </div>
-      <div className="flex flex-row flex-wrap gap-x-18 gap-y-12 w-full">
+      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-x-6 sm:gap-x-1 gap-y-8 w-full">
         {skills.map((skill) => (
           <div
             key={skill.name}
-            className="flex flex-col items-center justify-center gap-4 w-28"
+            className="flex flex-col items-center justify-center gap-3 w-20 sm:w-24 md:w-26"
           >
-            <div className="w-12 h-12 rounded-xl overflow-hidden">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl overflow-hidden">
               <img
                 src={skill.icon}
                 alt={skill.name}
                 className="w-full h-full object-contain object-center"
-                width={48}
-                height={48}
+                width={40}
+                height={40}
                 loading="lazy"
                 decoding="async"
               />
             </div>
-            <div className="text-base font-medium">{skill.name}</div>
+            <div className="text-xs sm:text-sm md:text-base font-medium text-center">
+              {skill.name}
+            </div>
           </div>
         ))}
       </div>

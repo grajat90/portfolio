@@ -5,11 +5,11 @@ export function ContactCard() {
   return (
     <footer
       id="contact"
-      className="w-full px-[250px] py-20 flex items-center justify-center"
+      className="w-full px-6 lg:px-[250px] py-12 lg:py-20 flex items-center justify-center"
     >
       <div className="w-full max-w-[900px] glass-bg glass-border rounded-[20px] shadow-[0px_0px_10px_2px_rgba(0,0,0,0.1)]">
-        <div className="flex flex-col gap-6 p-8 md:p-10">
-          <div className="text-[28px] md:text-[34px] font-medium -tracking-[1px]">
+        <div className="flex flex-col gap-6 p-6 md:p-10">
+          <div className="text-[24px] md:text-[34px] font-medium -tracking-[1px]">
             You can reach me at
           </div>
 
@@ -24,7 +24,7 @@ export function ContactCard() {
                 aria-label="Send me an email"
               >
                 <MailIcon className="w-5 h-5 text-muted-foreground transition group-hover:text-accent" />
-                <span className="text-[15px] md:text-[16px]">
+                <span className="text-[14px] md:text-[16px]">
                   grajat90@gmail.com
                 </span>
               </a>
@@ -44,7 +44,7 @@ export function ContactCard() {
                   loading="lazy"
                   decoding="async"
                 />
-                <span className="text-[15px] md:text-[16px]">@rajatgoel1</span>
+                <span className="text-[14px] md:text-[16px]">@rajatgoel1</span>
               </a>
             </div>
 
@@ -61,7 +61,7 @@ export function ContactCard() {
                 aria-label="Visit my LinkedIn"
               >
                 <LinkedinIcon className="w-5 h-5 text-muted-foreground transition group-hover:text-accent" />
-                <span className="text-[15px] md:text-[16px]">LinkedIn</span>
+                <span className="text-[14px] md:text-[16px]">LinkedIn</span>
               </a>
               <a
                 href="https://github.com/grajat90"
@@ -71,7 +71,7 @@ export function ContactCard() {
                 aria-label="Visit my GitHub"
               >
                 <GithubIcon className="w-5 h-5 text-muted-foreground transition group-hover:text-accent" />
-                <span className="text-[15px] md:text-[16px]">GitHub</span>
+                <span className="text-[14px] md:text-[16px]">GitHub</span>
               </a>
               <a
                 href="https://x.com/grajat90"
@@ -81,7 +81,7 @@ export function ContactCard() {
                 aria-label="Visit my Twitter/X"
               >
                 <TwitterIcon className="w-5 h-5 text-muted-foreground transition group-hover:text-accent" />
-                <span className="text-[15px] md:text-[16px]">Twitter</span>
+                <span className="text-[14px] md:text-[16px]">Twitter</span>
               </a>
             </div>
           </div>

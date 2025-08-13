@@ -15,22 +15,22 @@ export function HeroSection({ className }: { className?: string }) {
     <section
       id="home"
       className={cn(
-        "relative flex h-screen w-full flex-row justify-between items-center bg-portfolio-bg px-[250px] py-50",
+        "relative flex w-full flex-col md:flex-row justify-between items-center bg-portfolio-bg px-6 lg:px-[250px] py-35 lg:py-50 md:h-screen",
         className,
       )}
     >
       {/* Left side */}
       <div
         ref={descriptionRef}
-        className="flex flex-col items-start items-center h-full gap-20 py-10"
+        className="flex flex-col items-start md:h-full gap-8 md:gap-20 py-6 md:py-10"
       >
         <div className="flex flex-col items-start gap-4">
-          <h1 className="inline-flex items-center gap-2.5 text-[54px] -tracking-[2px]">
+          <h1 className="inline-flex items-center gap-2.5 text-[32px] md:text-[54px] -tracking-[2px]">
             <span className="font-light">Hi I'm</span>
             <span className="font-medium text-accent">Rajat Goel</span>
           </h1>
           {/* Role list */}
-          <div className="font-light text-lg">
+          <div className="font-light text-base md:text-lg">
             <ul className="mb-0 list-disc">
               <li className="mb-0 ml-5">
                 <span className="leading-normal">Lead Software Engineer</span>
@@ -47,7 +47,7 @@ export function HeroSection({ className }: { className?: string }) {
           </div>
         </div>
 
-        <div className="flex flex-col items-start gap-6 text-lg">
+        <div className="flex flex-col items-start gap-6 text-base md:text-lg">
           {/* Description */}
           <div className="flex flex-col items-start gap-1">
             <span className="mb-0 block">
@@ -87,7 +87,7 @@ export function HeroSection({ className }: { className?: string }) {
       </div>
 
       {/* Right side */}
-      <div className="flex flex-col gap-20">
+      <div className="flex flex-col gap-6 md:gap-20 mt-8 md:mt-0 w-full md:w-auto">
         {/* My Past Works Card */}
         <HeroCard
           id="past-work-card"
@@ -108,24 +108,28 @@ export function HeroSection({ className }: { className?: string }) {
           href="#tech-skills"
         />
       </div>
-      <Xarrow
-        start={descriptionRef}
-        end="past-work-card"
-        color={isPastWorkCardHovered ? "#866DF4" : "#949494"}
-        strokeWidth={2}
-        headSize={4}
-        curveness={0.35}
-        zIndex={isPastWorkCardHovered ? 100 : 50}
-      />
-      <Xarrow
-        start={descriptionRef}
-        end="skills-card"
-        color={isSkillsCardHovered ? "#866DF4" : "#949494"}
-        strokeWidth={2}
-        headSize={4}
-        curveness={0.35}
-        zIndex={isSkillsCardHovered ? 100 : 50}
-      />
+      {window.innerWidth > 768 && (
+        <>
+          <Xarrow
+            start={descriptionRef}
+            end="past-work-card"
+            color={isPastWorkCardHovered ? "#866DF4" : "#949494"}
+            strokeWidth={2}
+            headSize={4}
+            curveness={0.35}
+            zIndex={isPastWorkCardHovered ? 100 : 50}
+          />
+          <Xarrow
+            start={descriptionRef}
+            end="skills-card"
+            color={isSkillsCardHovered ? "#866DF4" : "#949494"}
+            strokeWidth={2}
+            headSize={4}
+            curveness={0.35}
+            zIndex={isSkillsCardHovered ? 100 : 50}
+          />
+        </>
+      )}
     </section>
   );
 }
