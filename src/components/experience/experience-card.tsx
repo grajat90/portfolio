@@ -85,7 +85,7 @@ export function ExperienceCard({
             </div>
           </HoverCardTrigger>
           <HoverCardContent
-            className="bg-[#2F2F2F] rounded-[20px] p-6 border-none w-[500px] z-300 shadow-[0px_0px_10px_2px_rgba(0,0,0,0.1)]"
+            className="bg-[#2F2F2F] rounded-[20px] p-6 border-none w-[700px] max-w-[90vw] z-300 shadow-[0px_0px_10px_2px_rgba(0,0,0,0.1)]"
             side="right"
           >
             <div className="flex flex-row items-start justify-between w-full mb-6">

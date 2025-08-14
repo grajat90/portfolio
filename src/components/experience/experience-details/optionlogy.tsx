@@ -15,31 +15,41 @@ export function OptionlogyExperienceDetails() {
         Responsibilites:
         <ul className="list-disc list-outside ml-4.5">
           <li>
-            <strong>Developed advanced options analytics</strong>, including
-            Greeks, volatility metrics, OI, probability of profit, and
-            breakevens.
+            Built a <strong>multi-leg options analytics suite</strong> with
+            payoff curves, <strong>greeks, implied volatility, deltas</strong>,
+            breakevens, and probability of profit, powered by a{" "}
+            <strong>custom Black-Scholes variant</strong> combining implied
+            volatilities for more realistic pricing.
           </li>
           <li>
-            Designed intuitive UIs and scalable backend APIs with robust data
-            operations using{" "}
-            <strong>NextJS, GoLang, NodeJS, Python, Java</strong> and more.
+            Designed <strong>real-time data pipelines</strong> for market feeds
+            and analytics using{" "}
+            <strong>
+              WebSockets, Kafka, TimescaleDB, Redis, Python, Go, and Celery
+            </strong>
+            , delivering <strong>millisecond-level updates</strong> to traders.
           </li>
           <li>
-            Implemented a custom Black-Scholes variant for combined IV-based
-            options pricing.
+            Engineered a <strong>distributed algo trading system</strong> in Go
+            using a <strong>master-slave architecture</strong>, managing load,
+            job scheduling, and availability of strategy processor nodes,
+            enabling <strong>parallel execution</strong> across thousands of
+            trading strategies.
           </li>
           <li>
-            Engineered a <strong>distributed algo-trading engine</strong> in
-            GoLang using an orchestrator - worker node architecture.
+            Developed a clean, intuitive & bug free user interface with
+            streaming analytics using{" "}
+            <strong>NextJS, ReactJS, WS, Figma</strong>
           </li>
           <li>
-            Built <strong>real-time data pipelines</strong> with Kafka,
-            TimescaleDB, WebSockets, and more for candle aggregation and
-            streaming.
+            Worked with databases & <strong>caching</strong> layers such as{" "}
+            <strong>redis and elasticsearch</strong> for fast & scalable trading
+            & analysis
           </li>
           <li>
-            Delivered a seamless, high-performance trading experience for 60K+
-            active options traders.
+            Managed a <strong>tech team of 5 people</strong> providing them with{" "}
+            <strong>architectural design</strong>, technical guidance and PR
+            reviews
           </li>
         </ul>
       </div>
